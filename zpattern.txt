@@ -1,0 +1,24 @@
+int main()
+{
+   int rows,i,j;
+   scanf("%d",&rows);
+   for(i=1;i<=rows;i++)
+       printf("*");
+       printf("\n");
+   for(i=1;i<=(rows-1);i++)
+   {
+       for(j=1;j<=rows;j++)
+       {
+           if(j==rows-i)
+              printf("*");
+           else
+              printf(" ");
+       }
+       printf("\n");
+   }
+   for(i=1;i<=rows;i++)
+   {
+       printf("*");
+   }
+    return 0;
+}
