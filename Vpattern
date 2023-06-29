@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int rows,i,j;
+    scanf("%d",&rows);
+    int x=1;
+    int y=rows*2-1;
+    for(i=1;i<=rows;i++)
+    {
+        for(j=1;j<=rows*2;j++)
+        {
+            if(j==x||j==y)
+            {
+                printf("*");  
+            }
+            else
+               printf(" ");
+        }
+        x++;
+        y--;
+        printf("\n");
+    }
+    return 0;
+}
